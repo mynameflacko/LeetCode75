@@ -19,7 +19,7 @@ def mergeAlternately(word1: str, word2: str) -> str:
             result += word1[i] + word2[i]
         result += word1[len_2:len_1]
             
-        return "".join(result)
+    return "".join(result)
         
 
 # print(mergeAlternately("abcd", "pq"))
