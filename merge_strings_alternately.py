@@ -2,7 +2,7 @@
 # If a string is longer than the other, append the additional letters onto the end of the merged string.
 
 def mergeAlternately(word1: str, word2: str) -> str:
-    result: str = ""
+    result: list = []
     
     len_1 = len(word1)
     len_2 = len(word2)
@@ -18,9 +18,8 @@ def mergeAlternately(word1: str, word2: str) -> str:
         for i in range(len_2):
             result += word1[i] + word2[i]
         result += word1[len_2:len_1]
+            
+        return "".join(result)
         
-    return result
-                
 
-
-print(mergeAlternately("abcd", "pq"))
+# print(mergeAlternately("abcd", "pq"))
